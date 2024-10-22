@@ -47,13 +47,13 @@ export default function Login() {
           <div className="flex flex-row h-fit gap-2">
             <Image src={qrcode} alt="" className="w-16" />
             <div className={`h-full flex flex-col justify-center`}>
-              <p className={`${moreSugar.className}`} >QR Class</p>
+              <p className={`${moreSugar.className} text-white`} >QR Class</p>
             </div>
           </div>
           <div className={`flex flex-col justify-center items-center ${inter.className}`}>
-            <p className={`text-2xl`}>Que bom te ver novamente!</p>
-            <p className={`text-5xl mt-2`}>Seja Bem Vindo!</p>
-            <p className={`text-center text-xl mt-6`}>Um software desenvolvido para melhorar o seu<br></br>aprendizado e acelerar o seu dia.</p>
+            <p className={`text-2xl text-white`}>Que bom te ver novamente!</p>
+            <p className={`text-5xl mt-2 text-white`}>Seja Bem Vindo!</p>
+            <p className={`text-center text-xl mt-6 text-white`}>Um software desenvolvido para melhorar o seu<br></br>aprendizado e acelerar o seu dia.</p>
           </div>
           <div></div>
         </div>

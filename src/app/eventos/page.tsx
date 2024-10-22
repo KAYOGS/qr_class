@@ -17,7 +17,7 @@ const inter = Inter({
     display: 'swap',
 });
 
-export default function Aulas() {
+export default function Eventos() {
     const dataDay = new Date().toLocaleDateString('pt-BR', {timeZone: 'America/Sao_Paulo'});
     return (
         <div className={'flex justify-between flex-col'}>
@@ -25,8 +25,8 @@ export default function Aulas() {
                 <Image src={QRcode} alt={'icone'} className={'w-[5%] h-[10vh]'}/>
                 <p className={`${moreSugar.className} text-xl text-white mr-[4%]`}>QR Class</p>
                 <div className={'flex flex-row gap-[15%]'}>
-                    <Link className={`${inter.className} text-white`} href={''}>Aulas</Link>
-                    <Link className={`${inter.className} text-white`} href={'/eventos'}>Eventos</Link>
+                    <Link className={`${inter.className} text-white`} href={'/aulas'}>Aulas</Link>
+                    <Link className={`${inter.className} text-white`} href={''}>Eventos</Link>
                 </div>
             </div>
             <div className={'bg-white w-full h-[10vh] flex flex-row pt-[2%] justify-between'}>
@@ -34,7 +34,7 @@ export default function Aulas() {
                     <p className={'text-black'}>Data: {dataDay}</p>
                 </div>
                 <div className={'w-1/3 flex justify-center'}>
-                    <p className={'text-black'}>Aulas Marcadas</p>
+                    <p className={'text-black'}>Eventos Marcados</p>
                 </div>
                 <div className={'w-1/3'}></div>
             </div>
